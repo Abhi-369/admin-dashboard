@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import { IoIosArrowUp, IoMdClose, IoMdNotificationsOutline } from 'react-icons/io'
+import { IoIosArrowDown, IoIosArrowUp, IoMdClose, IoMdNotificationsOutline } from 'react-icons/io'
 import { MdLocationPin } from 'react-icons/md'
 import { TfiMenu } from 'react-icons/tfi'
 
 const Navbar = () => {
 
     const [showSidebar, setShowSidebar] = useState(false)
+    const [showSubMenu, setShowSubMenu] = useState(false)
 
     return (
         <div className="flex items-center h-[60px] text-white px-6" style={{
@@ -16,7 +17,7 @@ const Navbar = () => {
                 <h2 className="sm:mt-0 mt-1">LOGO</h2>
             </div>
             <div className='flex child:items-center sm:justify-between justify-end items-center flex-[0.8]'>
-                <div className="gap-12 text-sm sm:flex hidden">
+                <div className="gap-[100px] text-sm sm:flex hidden">
                     <span>Menu 1</span>
                     <span>Menu 2</span>
                     <span>Menu 3</span>
@@ -50,23 +51,46 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    <div className='child:flex child:items-center child:gap-4 flex flex-col gap-5 mt-12 px-4'>
-                        <div className='justify-between'>
-                            <div className='flex items-center gap-5'>
-                                <img src="/Images/menu.svg" alt="" />
-                                <span className="text-[#F8991F] font-medium">MENU 1</span>
+                    <div className='flex flex-col gap-5 mt-12 px-4'>
+                        <div className='relative'>
+                            <div className='justify-between flex' onClick={() => setShowSubMenu(!showSubMenu)}>
+                                <div className='flex items-center gap-5'>
+                                    <img src="/Images/menu.svg" alt="" />
+                                    <span className="text-[#F8991F] font-medium">MENU 1</span>
+                                </div>
+                                {!showSubMenu ? <IoIosArrowDown /> : <IoIosArrowUp />}
                             </div>
-                            <IoIosArrowUp />
+                            {
+                                showSubMenu &&
+                                <>
+                                    <div className="absolute w-[1px] h-[95px] bg-[#F8991F] ml-2 mt-1" />
+
+                                    <div className='flex flex-col gap-3 ml-9 my-4 child:relative'>
+                                        <span>
+                                            Sub Menu 1
+                                            <div className='absolute -left-7 top-[10px] bg-[#F8991F] h-[1px] w-5' />
+                                        </span>
+                                        <span>
+                                            Sub Menu 2
+                                            <div className='absolute -left-7 top-[10px] bg-[#F8991F] h-[1px] w-5' />
+                                        </span>
+                                        <span>
+                                            Sub Menu 3
+                                            <div className='absolute -left-7 top-[10px] bg-[#F8991F] h-[1px] w-5' />
+                                        </span>
+                                    </div>
+                                </>
+                            }
                         </div>
-                        <div>
+                        <div className='flex items-center gap-4'>
                             <img src="/Images/profit.png" alt="" />
                             <span>Menu 2</span>
                         </div>
-                        <div>
+                        <div className='flex items-center gap-4'>
                             <img src="/Images/teamwork.png" alt="" />
                             <span>Menu 3</span>
                         </div>
-                        <div className='ml-1'>
+                        <div className='ml-1 flex items-center gap-4'>
                             <img src="/Images/logout.png" alt="" />
                             <span>Logout</span>
                         </div>
@@ -75,7 +99,7 @@ const Navbar = () => {
                 </div>
             }
 
-        </div>
+        </div >
     )
 }
 
