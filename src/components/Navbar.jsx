@@ -13,11 +13,11 @@ const Navbar = () => {
             background: '#232E3E 0% 0% no-repeat padding-box', boxShadow: '0px 3px 6px #00000029'
         }}>
             <div className="flex-[0.2] flex items-center gap-2">
-                <TfiMenu className='text-[#F8991F] text-xl sm:hidden block' onClick={() => setShowSidebar(true)} />
-                <h2 className="sm:mt-0 mt-1">LOGO</h2>
+                <TfiMenu className='text-[#F8991F] text-xl xl:hidden block' onClick={() => setShowSidebar(true)} />
+                <h2 className="xl:mt-0 mt-1">LOGO</h2>
             </div>
-            <div className='flex child:items-center sm:justify-between justify-end items-center flex-[0.8]'>
-                <div className="gap-[100px] text-sm sm:flex hidden">
+            <div className='flex child:items-center xl:justify-between justify-end items-center flex-[0.8]'>
+                <div className="gap-[100px] text-sm xl:flex hidden">
                     <span>Menu 1</span>
                     <span>Menu 2</span>
                     <span>Menu 3</span>
