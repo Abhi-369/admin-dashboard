@@ -19,11 +19,11 @@ const DashBoard = () => {
             <div className='flex gap-5'>
                 <div className='flex-[0.7] flex flex-col gap-5'>
 
-                    <div className='flex items-center max-h-[167px] h-full px-3 bg-[#F5F6F8] gap-5 rounded-md whitespace-nowrap'>
+                    <div className='flex items-center justify-between max-h-[155px] h-full px-3 bg-[#F5F6F8] gap-5 rounded-md whitespace-nowrap'>
                         <div className='flex items-center gap-3'>
                             <div className='relative'>
-                                <img src="/Images/User-ImgX2.png" alt="" />
-                                <img src="/Images/Camera.svg" alt="" className='absolute top-[70%] right-[-2px] w-5 h-5 bg-white rounded-full p-[2px] border' />
+                                <img src="/Images/User-ImgX2.png" alt="" className='h-[90px] w-[90px] object-contain' />
+                                <img src="/Images/Camera.svg" alt="" className='absolute top-[70%] right-[-3px] w-6 h-6 bg-white rounded-full p-[2px] border' />
                             </div>
 
                             <div>
@@ -36,34 +36,35 @@ const DashBoard = () => {
                         </div>
 
                         <div className='h-40 bg-slate-200 w-[1.5px]' />
+                        <div className='flex items-center gap-5'>
+                            <div className='child:flex child:items-center child:justify-between child:gap-3 flex flex-col gap-2 text-sm text-[#202020]'>
+                                <div>
+                                    <label className=''>First Name:</label>
+                                    <input type="text" placeholder="First Name" defaultValue="John" className='outline-none border border-[#C7C7C7] font-medium rounded p-1 px-2.5 placeholder:text-sm' style={{ boxShadow: 'inset 0px 0px 2px #00000012' }} />
+                                </div>
+                                <div>
+                                    <label className=''>Last Name:</label>
+                                    <input type="text" placeholder="Last Name" defaultValue="Smith" className='outline-none border border-[#C7C7C7] font-medium rounded p-1 px-2.5 placeholder:text-sm' />
+                                </div>
+                                <div>
+                                    <label className=''>Email:</label>
+                                    <input type="email" placeholder="Email" defaultValue="johnsmith@yahoo.com" className='outline-none border border-[#C7C7C7] font-medium rounded p-1 px-2.5 placeholder:text-sm' />
+                                </div>
+                            </div>
 
-                        <div className='child:flex child:items-center child:justify-between child:gap-3 flex flex-col gap-2 text-sm text-[#202020]'>
-                            <div>
-                                <label className=''>First Name:</label>
-                                <input type="text" placeholder="First Name" defaultValue="John" className='outline-none border border-[#C7C7C7] font-medium rounded p-1 px-2.5 placeholder:text-sm' style={{ boxShadow: 'inset 0px 0px 2px #00000012' }} />
-                            </div>
-                            <div>
-                                <label className=''>Last Name:</label>
-                                <input type="text" placeholder="Last Name" defaultValue="Smith" className='outline-none border border-[#C7C7C7] font-medium rounded p-1 px-2.5 placeholder:text-sm' />
-                            </div>
-                            <div>
-                                <label className=''>Email:</label>
-                                <input type="email" placeholder="Email" defaultValue="johnsmith@yahoo.com" className='outline-none border border-[#C7C7C7] font-medium rounded p-1 px-2.5 placeholder:text-sm' />
-                            </div>
-                        </div>
-
-                        <div className='child:flex child:items-center child:justify-between child:gap-3 flex flex-col gap-2 text-sm text-[#202020]'>
-                            <div>
-                                <label>Phone:</label>
-                                <input type="text" placeholder="Phone" defaultValue="+1 (324) 234-2342" className='outline-none border border-[#C7C7C7] font-medium rounded p-1 px-2.5 placeholder:text-sm' />
-                            </div>
-                            <div>
-                                <label>Graduation Year:</label>
-                                <input type="text" inputMode='numeric' placeholder="Graduation Year" defaultValue="1988" className='outline-none border border-[#C7C7C7] font-medium rounded p-1 px-2.5 placeholder:text-sm' />
-                            </div>
-                            <div>
-                                <label>Date of Birth:</label>
-                                <input type="email" placeholder="Date of Birth" defaultValue="08/03/1960" className='outline-none border border-[#C7C7C7] font-medium rounded p-1 px-2.5 placeholder:text-sm' />
+                            <div className='child:flex child:items-center child:justify-between child:gap-3 flex flex-col gap-2 text-sm text-[#202020]'>
+                                <div>
+                                    <label>Phone:</label>
+                                    <input type="text" placeholder="Phone" defaultValue="+1 (324) 234-2342" className='outline-none border border-[#C7C7C7] font-medium rounded p-1 px-2.5 placeholder:text-sm' />
+                                </div>
+                                <div>
+                                    <label>Graduation Year:</label>
+                                    <input type="text" inputMode='numeric' placeholder="Graduation Year" defaultValue="1988" className='outline-none border border-[#C7C7C7] font-medium rounded p-1 px-2.5 placeholder:text-sm' />
+                                </div>
+                                <div>
+                                    <label>Date of Birth:</label>
+                                    <input type="email" placeholder="Date of Birth" defaultValue="08/03/1960" className='outline-none border border-[#C7C7C7] font-medium rounded p-1 px-2.5 placeholder:text-sm' />
+                                </div>
                             </div>
                         </div>
 
@@ -76,9 +77,9 @@ const DashBoard = () => {
 
                     </div>
 
-                    <div className='flex gap-2'>
-                        <div className='flex flex-col gap-2'>
-                            <div className='bg-[#F5F6F8] rounded-md py-2 px-4 h-[189px]'>
+                    <div className='flex gap-2 h-full'>
+                        <div className='flex flex-col gap-2 h-full'>
+                            <div className='bg-[#F5F6F8] rounded-md py-2 px-4 h-full'>
                                 <h2 className='font-medium text-lg'>Bank Account</h2>
                                 <div className="flex items-center gap-2 mt-3 child:px-3 child:gap-2 child:rounded child:bg-white child:flex child:items-center">
                                     <div className=''>
@@ -169,7 +170,7 @@ const DashBoard = () => {
                                 </div>
                             </div>
                         </div>
-
+                            
                         <Activity />
 
                     </div>

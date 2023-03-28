@@ -6,7 +6,7 @@ import TabletDashBoard from './components/TabletDashBoard';
 
 const App = () => {
   return (
-    <div>
+    <div className='my-14'>
       <Navbar />
       <div>
         <DashBoard />

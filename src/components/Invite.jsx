@@ -26,10 +26,10 @@ const Invite = ({ isMobile }) => {
                 </div>
             </div>
 
-            <div className="relative">
+            <div className="relative mt-7">
                 {
                     showReq === "received" &&
-                    <div className={`flex flex-col gap-2 mt-3 ${!isMobile && 'border-r-[3px] border-[#E8E8E8] pr-5'} child:flex child:justify-between child:items-center child:bg-[#DEE8FF] child:rounded-md child:px-3 child:py-1`}>
+                    <div className={`flex flex-col gap-4 sm:gap-2 ${!isMobile && 'border-r-[3px] border-[#E8E8E8] pr-5'} child:flex child:justify-between child:items-center child:bg-[#DEE8FF] child:rounded-md child:px-3 child:py-1 text-sm sm:text-base`}>
                         <div className='child:flex child:items-center child:gap-3'>
                             <div>
                                 <img src="/Images/User-Img.png" alt="" />
@@ -125,21 +125,21 @@ const Invite = ({ isMobile }) => {
 
                 {
                     showReq === "sent" &&
-                    <div className={`child:rounded-md font-medium flex flex-col gap-2 mt-3 ${!isMobile && 'border-r-[3px] border-[#E8E8E8] pr-5'} child:bg-[#DEE8FF] child:py-1 child:px-7`}>
+                    <div className={`child:rounded-md font-medium flex flex-col gap-4 sm:gap-2 ${!isMobile && 'border-r-[3px] border-[#E8E8E8] pr-5'} child:bg-[#DEE8FF] child:py-1 child:px-7 text-sm sm:text-base`}>
                         <div>
-                            <span className="text-[#F8991F]">You</span> have invited johnsmith@gmail.com to become <br /> family member.
+                            <span className="text-[#F8991F]">You</span> have invited johnsmith@gmail.com to become <br className="sm:block hidden" /> family member.
                         </div>
                         <div>
-                            <span className="text-[#F8991F]">You</span> have invited johnsmith@gmail.com to become <br /> family member.
+                            <span className="text-[#F8991F]">You</span> have invited johnsmith@gmail.com to become <br className="sm:block hidden" /> family member.
                         </div>
                         <div>
-                            <span className="text-[#F8991F]">You</span> have invited johnsmith@gmail.com to become <br /> family member.
+                            <span className="text-[#F8991F]">You</span> have invited johnsmith@gmail.com to become <br className="sm:block hidden" /> family member.
                         </div>
                         <div>
-                            <span className="text-[#F8991F]">You</span> have invited johnsmith@gmail.com to become <br /> family member.
+                            <span className="text-[#F8991F]">You</span> have invited johnsmith@gmail.com to become <br className="sm:block hidden" /> family member.
                         </div>
                         <div>
-                            <span className="text-[#F8991F]">You</span> have invited johnsmith@gmail.com to become <br /> family member.
+                            <span className="text-[#F8991F]">You</span> have invited johnsmith@gmail.com to become <br className="sm:block hidden" /> family member.
                         </div>
                     </div>
                 }

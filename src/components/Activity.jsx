@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaUsersCog } from 'react-icons/fa'
 
 const Activity = ({ isTablet, isMobile }) => {
     return (
@@ -11,10 +12,10 @@ const Activity = ({ isTablet, isMobile }) => {
                 </div>
             }
 
-            <div className='flex flex-col gap-5'>
-                <div className='flex items-center gap-4'>
-                    <div className='bg-[#DEE8FF] rounded-full p-1'>
-                        <img src="/Images/users-cog.svg" alt="" />
+            <div className='flex flex-col gap-4 sm:whitespace-nowrap child:relative sm:text-base text-sm'>
+                <div className='flex items-center gap-5'>
+                    <div className='bg-[#DEE8FF] rounded-full w-8 h-8 p-2 flex items-center justify-center'>
+                        <FaUsersCog className='w-4 h-4' />
                     </div>
                     <div className="flex flex-col">
                         <div className=" font-medium">
@@ -22,10 +23,11 @@ const Activity = ({ isTablet, isMobile }) => {
                         </div>
                         <span className='text-[#C7C7C7] font-medium text-xs'>5 October 11:46 AM</span>
                     </div>
+                    <div className='absolute hidden sm:block h-4 w-[2px] bottom-0 left-[15.5px] top-[39px] bg-slate-200' />
                 </div>
-                <div className='flex items-center gap-4'>
-                    <div className='bg-[#DEE8FF] rounded-full p-1'>
-                        <img src="/Images/users-cog.svg" alt="" />
+                <div className='flex items-center gap-5'>
+                    <div className='bg-[#DEE8FF] rounded-full w-8 h-8 p-2 flex items-center justify-center'>
+                        <FaUsersCog className='w-4 h-4' />
                     </div>
                     <div className="flex flex-col">
                         <div className=" font-medium">
@@ -33,10 +35,11 @@ const Activity = ({ isTablet, isMobile }) => {
                         </div>
                         <span className='text-[#C7C7C7] font-medium text-xs'>5 October 11:46 AM</span>
                     </div>
+                    <div className='absolute hidden sm:block h-4 w-[2px] bottom-0 left-[15.5px] top-[39px] bg-slate-200' />
                 </div>
-                <div className='flex items-center gap-4'>
-                    <div className='bg-[#DEE8FF] rounded-full p-1'>
-                        <img src="/Images/users-cog.svg" alt="" />
+                <div className='flex items-center gap-5'>
+                    <div className='bg-[#DEE8FF] rounded-full w-8 h-8 p-2 flex items-center justify-center'>
+                        <FaUsersCog className='w-4 h-4' />
                     </div>
                     <div className="flex flex-col">
                         <div className=" font-medium">
@@ -44,10 +47,11 @@ const Activity = ({ isTablet, isMobile }) => {
                         </div>
                         <span className='text-[#C7C7C7] font-medium text-xs'>5 October 11:46 AM</span>
                     </div>
+                    <div className='absolute hidden sm:block h-4 w-[2px] bottom-0 left-[15.5px] top-[39px] bg-slate-200' />
                 </div>
-                <div className='flex items-center gap-4'>
-                    <div className='bg-[#DEE8FF] rounded-full p-1'>
-                        <img src="/Images/users-cog.svg" alt="" />
+                <div className='flex items-center gap-5'>
+                    <div className='bg-[#DEE8FF] rounded-full w-8 h-8 p-2 flex items-center justify-center'>
+                        <FaUsersCog className='w-4 h-4' />
                     </div>
                     <div className="flex flex-col">
                         <div className=" font-medium">
@@ -55,10 +59,11 @@ const Activity = ({ isTablet, isMobile }) => {
                         </div>
                         <span className='text-[#C7C7C7] font-medium text-xs'>5 October 11:46 AM</span>
                     </div>
+                    <div className='absolute hidden sm:block h-4 w-[2px] bottom-0 left-[15.5px] top-[39px] bg-slate-200' />
                 </div>
-                <div className='flex items-center gap-4'>
-                    <div className='bg-[#DEE8FF] rounded-full p-1'>
-                        <img src="/Images/users-cog.svg" alt="" />
+                <div className='flex items-center gap-5'>
+                    <div className='bg-[#DEE8FF] rounded-full w-8 h-8 p-2 flex items-center justify-center'>
+                        <FaUsersCog className='w-4 h-4' />
                     </div>
                     <div className="flex flex-col">
                         <div className=" font-medium">
@@ -66,13 +71,14 @@ const Activity = ({ isTablet, isMobile }) => {
                         </div>
                         <span className='text-[#C7C7C7] font-medium text-xs'>5 October 11:46 AM</span>
                     </div>
+                    <div className='absolute hidden xl:block h-4 w-[2px] bottom-0 left-[15.5px] top-[39px] bg-slate-200' />
                 </div>
 
                 {!isTablet &&
                     <>
-                        <div className='flex items-center gap-4'>
-                            <div className='bg-[#DEE8FF] rounded-full p-1'>
-                                <img src="/Images/users-cog.svg" alt="" />
+                        <div className='flex items-center gap-5'>
+                            <div className='bg-[#DEE8FF] rounded-full w-8 h-8 p-2 flex items-center justify-center'>
+                                <FaUsersCog className='w-4 h-4' />
                             </div>
                             <div className="flex flex-col">
                                 <div className=" font-medium">
@@ -80,10 +86,11 @@ const Activity = ({ isTablet, isMobile }) => {
                                 </div>
                                 <span className='text-[#C7C7C7] font-medium text-xs'>5 October 11:46 AM</span>
                             </div>
+                            <div className='absolute hidden sm:block h-4 w-[2px] bottom-0 left-[15.5px] top-[39px] bg-slate-200' />
                         </div>
-                        <div className='flex items-center gap-4'>
-                            <div className='bg-[#DEE8FF] rounded-full p-1'>
-                                <img src="/Images/users-cog.svg" alt="" />
+                        <div className='flex items-center gap-5'>
+                            <div className='bg-[#DEE8FF] rounded-full w-8 h-8 p-2 flex items-center justify-center'>
+                                <FaUsersCog className='w-4 h-4' />
                             </div>
                             <div className="flex flex-col">
                                 <div className=" font-medium">
@@ -91,10 +98,11 @@ const Activity = ({ isTablet, isMobile }) => {
                                 </div>
                                 <span className='text-[#C7C7C7] font-medium text-xs'>5 October 11:46 AM</span>
                             </div>
+                            <div className='absolute hidden sm:block h-4 w-[2px] bottom-0 left-[15.5px] top-[39px] bg-slate-200' />
                         </div>
-                        <div className='flex items-center gap-4'>
-                            <div className='bg-[#DEE8FF] rounded-full p-1'>
-                                <img src="/Images/users-cog.svg" alt="" />
+                        <div className='flex items-center gap-5'>
+                            <div className='bg-[#DEE8FF] rounded-full w-8 h-8 p-2 flex items-center justify-center'>
+                                <FaUsersCog className='w-4 h-4' />
                             </div>
                             <div className="flex flex-col">
                                 <div className=" font-medium">
